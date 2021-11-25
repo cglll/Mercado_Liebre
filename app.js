@@ -10,7 +10,7 @@ app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/home.html');
 });
 
-app.listen(3001, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log('Servidor funcionando');
 });
 
